@@ -1,0 +1,17 @@
+.sidebar {
+    transition: transform 0.3s ease-in-out;
+    overflow-y: auto;
+    height: 100vh;
+}
+
+.sidebar.open {
+    transform: translateX(0); // Open sidebar
+}
+
+.sidebar {
+    transform: translateX(-100%); // Closed sidebar
+}
+
+#page-content-wrapper {
+    transition: margin-left 0.3s ease-in-out;
+}
